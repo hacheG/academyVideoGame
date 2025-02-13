@@ -112,6 +112,10 @@ div{
 font-size: 62px;    /* margin-bottom: 0; */
 }
 
+a{
+    text-decoration: none;
+}
+
 .diseño{
     left: 100px;
 }
