@@ -1,3 +1,8 @@
+:root{
+    --sizeWidth: 250px;
+    --sizeHeight: 100px
+}
+
 h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,34 +13,59 @@ h1{
 details{
     border: 1px solid black;
     border-radius: 10px 10px 0 0 ;
-    width: 300px;
+    max-width: var(--sizeWidth);
+    /* height: var(--sizeHeight); */
     /* display: inline-block; */
-    /* position: relative; */
+    /* position: absolute; */
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
     box-shadow: 5px 5px 5px gray;
 }
 
+
 summary{
-    background: linear-gradient(to left, blue, pink);
+    background: linear-gradient(to left, blue, blueviolet);
     border-radius: 10px 10px 0 0 ;
-    
     color: aliceblue;
     /* height: 100px; */
-    width: 300px;
+    width: var(--sizeWidth);
+    height: var(--sizeHeight);
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     font-weight: 600;
     list-style: none; 
-    text-align: center;
+    /* text-align: center; */
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
 
+span{
+    margin-left: 10px;
+    
+}
+
 summary:hover{
     cursor: pointer;
+}
+
+.video-diseño,
+.video-arte,
+.video-musica,
+.video-programacion,
+.video-redes,
+.video-blog,
+.video-jams{
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    border-radius: 20px;
+    width: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    margin-left: 10px;
+    padding-left: 7px;
 }
 
 /* summary::before{
@@ -56,7 +86,7 @@ div{
 }
 
 .pr{
-    background-color: rgb(188, 25, 220);
+    /* background-color: rgb(188, 25, 220);
     border: 1px solid black;
     width: 15%;
     height: 45px;
@@ -64,8 +94,12 @@ div{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
-    
+    margin-bottom: 0; */
+    /* display: inline; */
+    position: relative;
+    left: 160px;
+    top: -120px;
+    width: 10%;
 }
 
 /* .pr::after{
@@ -74,6 +108,34 @@ div{
 } */
 
 .pr p{
-    margin-top: 7px;
-    /* margin-bottom: 0; */
+    /* margin-top: 7px; */
+font-size: 62px;    /* margin-bottom: 0; */
+}
+
+.diseño{
+    left: 100px;
+}
+
+.arte{
+    left: 400px;
+}
+
+.musica{
+    left: 700px;
+}
+
+.programacion{
+    left: 1000px;
+}
+
+.redes{
+    left: 1300px;
+}
+
+.blog{
+    left: 1600px;
+}
+
+.jams{
+    left: 1900px;
 }
